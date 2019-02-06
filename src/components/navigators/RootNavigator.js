@@ -1,15 +1,21 @@
 // @flow
 import { createStackNavigator } from 'react-navigation';
-import { Screen1, Screen2 } from './../screens/Screens.sample';
+import HomeScreen from '@components/screens/HomeScreen';
+import UserScreen from '@components/screens/UserScreen';
 
 const RootNavigator = createStackNavigator({
   Home: {
-    screen: Screen1,
+    screen: HomeScreen,
     navigationOptions: ({ navigation }) => ({
-      title: 'Screen 1',
+      title: 'Home',
     }),
   },
-  /* Add more screen here */
+  User: {
+    screen: UserScreen,
+    navigationOptions: ({ navigation }) => ({
+      title: 'User',
+    }),
+  },
 });
 
 export default RootNavigator;

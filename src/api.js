@@ -1,7 +1,7 @@
 // @flow
 import faker from 'faker';
 
-type UserType = {
+export type UserType = {
   key: number,
   uuid: number,
   username: string,
